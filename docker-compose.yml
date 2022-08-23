@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  sanic_fibonacci:
+    image: sanic-fibonacci
+    container_name: sanic-fibonacci
+    build: .
+    ports:
+      - "8000:8000"
+    command: python main.py
