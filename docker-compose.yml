@@ -6,4 +6,4 @@ services:
     build: .
     ports:
       - "8000:8000"
-    command: python main.py
+    command: sanic main:app --host 0.0.0.0 --workers 4
